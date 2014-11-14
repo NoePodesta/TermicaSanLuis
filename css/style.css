@@ -1,0 +1,431 @@
+
+@font-face {
+    font-family: TradeGothicLTStd;
+    src: url(../fonts/TradeGothicLTStd.otf);
+}
+@font-face {
+    font-family: TradeGothicLTStd-Bd2;
+    src: url(../fonts/TradeGothicLTStd-Bd2.otf);
+}
+body{
+    font-family: TradeGothicLTStd;
+}
+
+strong{
+    font-family: TradeGothicLTStd-Bd2;
+}
+
+footer{
+    background-color: #01573E;
+    color: #A0A0A0;
+    font-size: 13px;
+    padding: 20px 10px;
+}
+
+#our-company .container li:before, #quality-policy .container li:before{
+    content: url('../images/BULLETS-06-small.png');
+    vertical-align: text-top;
+    padding-right: 5px;
+}
+
+#quality-policy .container li, #our-company .container li{
+    list-style: none;
+}
+
+#map_of_BA, #map_of_SM, #map_fa_SL{
+    width: 500px;
+    height: 400px;
+}
+
+.sub-navbar{
+    position: fixed;
+    background: white;
+    left: 25%;
+    right: 25%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    min-height: 50px;
+    top: 101px;
+}
+.sub-navbar .nav > li{
+    display: inline-block;
+}
+
+.navbar{
+    margin-bottom: 0;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar-brand{
+    height: 80px;
+    padding: 0;
+}
+
+.navbar-brand img{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .navbar-default .navbar-nav > li > a {
+        font-size: 10px;
+    }
+}
+
+a.btn-download{
+    background: #01573E;
+    padding: 2px 20px !important;
+    color: white !important;
+    font-size: 10px !important;
+}
+
+
+.navbar-default .navbar-nav > li > a, .dropdown-menu > li > a{
+    text-transform: uppercase;
+    color: #A0A0A0;
+    font-size: 12px;
+}
+.dropdown-menu > li > a{
+    color: #000000;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus{
+    background-color: white;
+    color: #01573E;
+    outline: none;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+    color: #01573E;
+    cursor: pointer;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #01573E;
+}
+
+.navbar-default .navbar-nav > li > a.our-company-menu:hover{
+    background: url('../images/prueba-ne.png') no-repeat;
+}
+
+.navbar-default .navbar-nav > li > a.products-menu:hover{
+    background: url('../images/products-hover.png') no-repeat;
+}
+
+.navbar-default .navbar-nav > li > a.benefit-menu:hover{
+    background: url('../images/beneficios-hover.png') no-repeat;
+}
+
+.navbar-default .navbar-nav > li > a.success-case-menu:hover {
+    background: url('../images/exito-hover.png') no-repeat;
+}
+
+.navbar-default .navbar-nav > li > a.news-menu:hover {
+    background: url('../images/TERMICA-WEB-MENUSELECT-02-small.png') no-repeat;
+}
+
+.navbar-default .navbar-nav > li > a.contact-menu:hover{
+    background: url('../images/TERMICA-WEB-MENUSELECT-02-small.png') no-repeat;
+}
+
+
+#products .green-panel img{
+    width: 100%;
+}
+
+#products .green-panel{
+    padding: 0 0 20px 0;
+}
+
+#products .green-panel p{
+    margin-top: 20px;
+}
+
+
+.green-panel{
+    background-color: #01573E;
+    color: #A0A0A0;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+h1.green-label{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #01573E;
+    font-weight: normal;
+    width: 20%;
+    padding: 10px 10px 10px 5%;
+    text-align: right;
+}
+
+.products{
+    text-align: center;
+}
+
+.contact{
+    background-color: #A0A0A0;
+    color: #01573E;
+    padding-bottom: 10px;
+}
+
+.contact label{
+    font-size: 18px;
+}
+
+.contact .btn{
+    background-color: #01573E ;
+    color: #A0A0A0;
+    border-color: #A0A0A0;
+    font-size: 18px;
+}
+.contact h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #A0A0A0;
+    background-color: white;
+    font-weight: normal;
+    width: 20%;
+    padding: 10px 10px 10px 5%;
+    text-align: right;
+}
+
+.contact-companies{
+    background-color: white;
+    color: #A0A0A0;
+}
+
+.contact-companies p{
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.contact-companies p:first-child{
+    margin: 10px 0;
+}
+
+.history{
+    background-color: #A0A0A0;
+    color: white;
+    text-align: justify;
+}
+
+
+.history h1{
+    color: #A0A0A0;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 0 10px 30px;
+    width: 20%;
+
+}
+
+#quality-policy img{
+    width: 100%;
+}
+
+.quality-policy .fa{
+    padding-right: 10px;
+}
+#quality-policy .quality-policy img{
+    width: auto;
+}
+
+.mision{
+    background-color: white;
+    color: #01573E;
+    text-align: justify;
+}
+
+.mision h1{
+    color: #ffffff;
+    background-color: #01573E;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 0 10px 30px;
+    width: 20%;
+
+}
+.values{
+    background-color: #01573E;
+    color: #A0A0A0;
+    text-align: justify;
+}
+
+.values h1{
+    color: #01573E;
+    background-color: #A0A0A0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 0 10px 30px;
+    width: 20%;
+
+}
+
+.env-responsability, .quality-policy{
+    color: #01573E;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.submenu ul{
+    border-top: 2px solid #01573E;
+    border-bottom: 2px solid #01573E;
+    padding: 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.submenu li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.submenu li a{
+    color: #01573E;
+    text-decoration: none;
+}
+
+.submenu li.active a{
+    color: white;
+}
+
+.submenu li.active{
+    background-color: #01573E;
+}
+
+.acustica, .acustica:hover, .termica, .termica:hover, .fachada, .fachada:hover{
+    width:150px;
+    height:150px;
+    margin: 0 65px;
+}
+
+.acustica{
+    background: transparent url("../images/ACUSTICA-VERDE-02-chico.png");
+}
+.acustica:hover, .acustica.active{
+    background: transparent url("../images/ACUSTICA-AMARILLO-02-chico.png");
+}
+.termica{
+    background: transparent url("../images/TERMICA-VERDE-01-chico.png");
+}
+.termica:hover, .termica.active{
+    background: transparent url("../images/TERMICA-AMARILLO-01-chico.png");
+}
+.fachada{
+    background: transparent url("../images/FACHADAS-VERDE-03-chico.png");
+}
+.fachada:hover, .fachada.active{
+    background: transparent url("../images/FACHADAS-AMARILLO-03-chico.png");
+}
+
+.panel-default > .panel-heading {
+    color: white;
+    background-color: #01573E;
+}
+
+#products .icon-products{
+    margin-top: 15px;
+}
+
+.icon-products{
+    margin-bottom: 15px;
+}
+
+
+.side-menu{
+    width: 220px;
+    position: fixed;
+    top: 81px;
+    margin: 0px;
+    background-color: #01573E;
+    z-index: 1000;
+    color: white;
+    box-shadow: black 1px 1px 1px;
+}
+.side-menu ul, .side-menu ul li{
+    list-style: none;
+}
+
+.fa-angle-double-left{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: white solid;
+    padding: 5px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.gray-panel{
+    background-color: #f8f8f8
+}
+.gray-panel.icon-products{
+    margin-top: 81px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    /* display: flex; */
+}
+.gray-panel img{
+    width: 100px;
+}
+
+.product-menu{
+    width: 200px;
+}
+
+.product-menu ul, .product-menu li{
+    list-style: none;
+}
+
+.product-menu ul > li{
+    border-bottom: solid 1px #d3d3d3;
+}
+
+.product-menu ul li {
+    padding: 6px 0 5px 10px;
+}
+
+.product-menu ul li a{
+    color:  #01573E;
+}
+
+.product-menu ul li a:hover{
+    font-family: TradeGothicLTStd-Bd2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-menu ul li a:hover .icon-menu:before{
+    content: "\f107";
+}
+
+.icon-menu{
+    float: right;
+    color: #bbb;
+}
+
+
