@@ -20,41 +20,32 @@
 <div id="aislacion-termica"  class="container-fluid">
     <div class="row gray-panel icon-products">
         <div class="container">
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 text-center">
                 <img src="../images/ACUSTICA-VERDE-02-chico.png"/>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 text-center">
                 <img src="../images/TERMICA-VERDE-01-chico.png"/>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 text-center">
                 <img src="../images/FACHADAS-VERDE-03-chico.png"/>
             </div>
         </div>
     </div>
+    <div class="product-content">
+        <div class="product-menu" ng-include src="'aislacion-termica-menu.html'"></div>
+        <div class="col-xs-12 product-container">
+            <img src="../images/aislacion-termica.png">
+            <div class="description">El mejor aislante térmico es el vacío, pero debido a la gran dificultad para obtener y mantener condiciones de
+                vacío, éste se emplea en muy pocas ocasiones. En la práctica se utiliza aire, que gracias a su baja conductividad
+                térmica y un bajo coeficiente de absorción de la radiación, constituye un elemento muy resistente al paso de calor.
+                Sin embargo, el fenómeno de convección que se origina en las cámaras de aire aumenta sensiblemente su capacidad de
+                transferencia térmica. Además el aire debe de estar seco, sin humedad, lo que es difícil de conseguir en las cámaras
+                de aire.
+            </div>
+        </div>
+    </div>
 </div>
-<div class="product-menu">
-    <ul>
-        <li>
-            <a>Frio <i class="fa fa-angle-right icon-menu"></i></a>
-            <ul>
-                <li>uno <i class="fa fa-angle-down icon-menu"></i></li>
-                <li>dos</li>
-                <li>tres</li>
-            </ul>
-        </li>
-        <li>
-            <a>Calor</a>
-            <ul>
-                <li>uno</li>
-                <li>dos</li>
-                <li>tres</li>
-            </ul>
-        </li>
-    </ul>
-</div>
-<div class="product-container">
 
-</div>
 <footer ng-include src="'footer.html'" class="text-center"></footer>
 </body>
 </html>

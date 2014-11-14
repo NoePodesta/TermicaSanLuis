@@ -20,6 +20,13 @@ footer{
     color: #A0A0A0;
     font-size: 13px;
     padding: 20px 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
 }
 
 #our-company .container li:before, #quality-policy .container li:before{
@@ -379,15 +386,7 @@ h1.green-label{
 }
 .gray-panel.icon-products{
     margin-top: 81px;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    /* display: flex; */
+    margin-bottom: 0;
 }
 .gray-panel img{
     width: 100px;
@@ -395,6 +394,7 @@ h1.green-label{
 
 .product-menu{
     width: 200px;
+    display: inline-block;
 }
 
 .product-menu ul, .product-menu li{
@@ -422,10 +422,31 @@ h1.green-label{
 .product-menu ul li a:hover .icon-menu:before{
     content: "\f107";
 }
+.product-container{
+    padding: 10px 0 0 10px;
+    text-align: center;
+}
+
+.product-container img{
+    width: 100%;
+    max-width: 900px;
+}
+
+
+.product-container .description{
+    padding: 20px;
+    text-align: justify;
+    color: #01573E;
+}
+
+.product-content{
+    display: inline-flex;
+}
 
 .icon-menu{
     float: right;
     color: #bbb;
 }
+
 
 

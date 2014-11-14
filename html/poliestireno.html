@@ -1,0 +1,140 @@
+<!doctype html>
+<html ng-app="store">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.less" >
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="icon" href="../images/LOGO.ico"/>
+    <script src="../js/less-1.7.3.js" type="text/javascript"></script>
+    <script src="../js/angular.min.js" type="text/javascript"></script>
+    <script src="../js/ui-bootstrap-0.9.0.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+    <title>Térmica San Luis - Aislación Térmica</title>
+</head>
+<body ng-app="store">
+<header ng-include src="'header.html'"></header>
+<div id="aislacion-termica"  class="container-fluid">
+    <div class="row gray-panel icon-products">
+        <div class="container">
+            <div class="col-xs-12 col-sm-4 text-center">
+                <img src="../images/ACUSTICA-VERDE-02-chico.png"/>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center">
+                <img src="../images/TERMICA-VERDE-01-chico.png"/>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center">
+                <img src="../images/FACHADAS-VERDE-03-chico.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="product-content">
+        <div class="row product-menu" ng-include src="'aislacion-termica-menu.html'"></div>
+        <div class="col-xs-12 product-container">
+            <div class="col-xs-3" style="position: fixed">
+                <h1>Poliestireno (EPS)</h1>
+                <img src="../images/polies.png"/>
+                <div class="features">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#placas" role="tab" data-toggle="tab">Placas</a></li>
+                        <li role="presentation"><a href="#tiras" role="tab" data-toggle="tab">Tiras</a></li>
+                        <li role="presentation"><a href="#medias-cañas" role="tab" data-toggle="tab">Medias Cañas</a></li>
+                        <li role="presentation"><a href="#segmentos" role="tab" data-toggle="tab">Segmentos</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-xs-offset-4 col-xs-8">
+                <div class="description">
+                    La base del Poliestireno es el estireno, un liquido cuyas moléculas se polimerizan, dando origen a
+                    las macromoléculas de poliestireno.  El estireno se mezcla íntimamente con agua y un agente de
+                    expansión (el hidrocarburo pentano C5H12).
+                    Poliestireno expandido de alta densidad (EPS) también conocido como TELGOPOR.  Este material plástico
+                    es muy conocido en la industria de la construcción por su utilización como material aislante debido
+                    a sus excelentes propiedades y a las siguientes ventajas:
+                    <ul>
+                        <li>Poco peso: contiene hasta un 98,5% de su volumen en aire.  Por consiguiente, la densidad de
+                            la espuma es muy baja (pudiendo variar sus densidades desde 15 hasta 30 Kg./m3).</li>
+
+                         <li>Células cerradas: 1 cm3 de espuma de poliestireno expandido contiene de 3 a 6 millones de
+                             celdillas, llenas de aire.</li>
+
+                        <li>Estanqueidad: por estar sus células cerradas, el poliestireno expandido absorbe solo
+                            cantidades minúsculas de agua.  No acusa capilaridad alguna.</li>
+
+                        <li>Bajo coeficiente de conductividad térmica: el aire en reposo dentro de las celdillas
+                            cerradas es muy mal conductor de calor.</li>
+
+                        <li>Buena resistencia mecánica y ausencia de fragilidad ante tensiones hendientes.</li>
+
+                        <li>Buena elasticidad: la capacidad de amortiguación de los distintos tipos de poliestireno
+                            expandido están en el límite superior dado por las leyes físicas que rigen los
+                            materiales aislantes.</li>
+
+                        <li>Resistencia al envejecimiento</li>
+
+                        <li>Resistencia a hongos y parásitos: el poliestireno expandido no es substrato nutritivo para
+                            parásitos, hongos o bacterias de putrefacción, ni es alimento de roedores o insectos.</li>
+
+                        <li>Amplio espectro térmico.</li>
+
+                        <li>Difícil inflamabilidad:  llamado auto extinguible y de muy baja propagación de llamas.</li>
+
+                        <li>Rigidez dinámica:  se le exige una resistencia a la compresión que le impide deformarse en
+                            exceso, una buena elasticidad, o sea una rigidez dinámica baja.</li>
+
+                        <li>Estabilidad dimensional: según la Norma DIN 18164 se establece una tolerancia de
+                            aproximadamente 0,5% como máximo, en las dimensiones de largo y ancho.  La retracción del
+                            producto, después de un año a contar desde su fabricación, es insignificante.</li>
+                    </ul>
+
+                </div>
+                <div role="tabpanel" class="text-justify">
+                    <!-- Nav tabs -->
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="placas">
+                            <p>
+                                Las Placas se utilizan para la aislación para superficies planas. De acuerdo a la
+                                temperatura a aislar, se utilizara el espesor correspondiente.
+                            </p>
+                            <ul>
+                                <li>Dimensiones: 990mm x 990mm</li>
+                                <li>Espesores: desde 10mm hasta 300mm</li>
+                                <li>Densidad: 20kg/m3</li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tiras">
+                            <p>Son placas cortadas en tiras para realizar trabajos específicos, de grandes diámetros.
+                            </p>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="medias-cañas">
+                            <p>Utilizados para aislar tuberías de bajas temperaturas.</p>
+                            <ul>
+                                <li>Densidad: 20kg/m3.</li>
+                                <li>   Espesor: hasta 6’’ en una capa o dos capas.</li>
+                                <li>Dimensiones: desde ½’’ hasta 10’’ de diámetro.</li>
+                                <li style="color: red">FALTA TABLA</li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="segmentos">
+                            <p>Medias cañas cortados en partes para una aislación de tuberías de diámetros mayores. </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<footer ng-include src="'footer.html'" class="text-center"></footer>
+</body>
+</html>
