@@ -448,5 +448,20 @@ h1.green-label{
     color: #bbb;
 }
 
+#media-cana-table{
+    width: 80%;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+#media-cana-table th{
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+
 
 

@@ -34,8 +34,8 @@
     <div class="product-content">
         <div class="row product-menu" ng-include src="'aislacion-termica-menu.html'"></div>
         <div class="col-xs-12 product-container">
-            <div class="col-xs-3" style="position: fixed">
-                <h1>Poliestireno (EPS)</h1>
+            <div id="sticky_navigation" class="col-xs-3">
+                <h2>Poliestireno (EPS)</h2>
                 <img src="../images/polies.png"/>
                 <div class="features">
                     <ul class="nav nav-tabs" role="tablist">
@@ -117,10 +117,11 @@
                             <p>Utilizados para aislar tuberías de bajas temperaturas.</p>
                             <ul>
                                 <li>Densidad: 20kg/m3.</li>
-                                <li>   Espesor: hasta 6’’ en una capa o dos capas.</li>
+                                <li>Espesor: hasta 6’’ en una capa o dos capas.</li>
                                 <li>Dimensiones: desde ½’’ hasta 10’’ de diámetro.</li>
-                                <li style="color: red">FALTA TABLA</li>
                             </ul>
+                            <div class="table-responsive text-center" ng-include src="'media-canas-table.html'"></div>
+
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="segmentos">
                             <p>Medias cañas cortados en partes para una aislación de tuberías de diámetros mayores. </p>
@@ -134,6 +135,35 @@
         </div>
     </div>
 </div>
+<script>
+    $(function() {
+
+        // grab the initial top offset of the navigation
+        var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+
+        // our function that decides weather the navigation bar should have "fixed" css position or not.
+        var sticky_navigation = function(){
+            var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+
+            // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+            // otherwise change it back to relative
+            if (scroll_top > sticky_navigation_offset_top) {
+                $('#sticky_navigation').css({ 'position': 'fixed', 'top':'82px', 'left':'150px' });
+            } else {
+                $('#sticky_navigation').css({ 'position': 'relative', 'top':'0', 'left':'0'  });
+            }
+        };
+
+        // run our function on load
+        sticky_navigation();
+
+        // and run it again every time you scroll
+        $(window).scroll(function() {
+            sticky_navigation();
+        });
+
+    });
+</script>
 
 <footer ng-include src="'footer.html'" class="text-center"></footer>
 </body>
