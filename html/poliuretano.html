@@ -1,0 +1,178 @@
+<!doctype html>
+<html ng-app="store">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.less" >
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="icon" href="../images/LOGO.ico"/>
+    <script src="../js/less-1.7.3.js" type="text/javascript"></script>
+    <script src="../js/angular.min.js" type="text/javascript"></script>
+    <script src="../js/ui-bootstrap-0.9.0.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+    <title>Térmica San Luis - Aislación Térmica</title>
+</head>
+<body ng-app="store">
+<header ng-include src="'header.html'"></header>
+<div id="aislacion-termica"  class="container-fluid">
+    <div class="row gray-panel icon-products">
+        <div class="container">
+            <div class="col-xs-12 col-sm-4 text-center">
+                <img src="../images/ACUSTICA-VERDE-02-chico.png"/>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center">
+                <img src="../images/TERMICA-VERDE-01-chico.png"/>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center">
+                <img src="../images/FACHADAS-VERDE-03-chico.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="product-content">
+        <div class="row product-menu" ng-include src="'aislacion-termica-menu.html'"></div>
+        <div class="col-xs-12 product-container">
+            <div id="sticky_navigation" class="col-xs-3">
+                <h2>Poliuretano (PUR): </h2>
+                <img src="../images/polies.png"/>
+                <div class="features">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#placas" role="tab" data-toggle="tab">Placas</a></li>
+                        <li role="presentation"><a href="#tiras" role="tab" data-toggle="tab">Tiras</a></li>
+                        <li role="presentation"><a href="#medias-cañas" role="tab" data-toggle="tab">Medias Cañas</a></li>
+                        <li role="presentation"><a href="#segmentos" role="tab" data-toggle="tab">Segmentos</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-xs-offset-4 col-xs-8">
+                <div class="description">
+                    <p>La espuma rígida de poliuretano es un material de construcción que se utiliza como aislamiento térmico
+                    de alta eficiencia, aislamiento acústico e impermeabilizante, y se fabrica in situ a partir de la
+                    reacción de dos componentes. Esta espuma rígida de poliuretano inyectado, se forma cuando dos
+                    componentes se mezclan físicamente por batido y se introducen en una cavidad donde se realiza la
+                    expansión.</p>
+
+                    <ul>
+                        <li>Utilización: Aislación Frio, Aislación Caliente</li>
+
+                        <li>Composición: Poliol – Isocianato</li>
+
+                        <li>Densidad:  40kg/m3</li>
+
+                        <li>Propiedades Mecánicas:
+                            <ul>
+                                <li>Resistencia a la Compresión. 1,5Kg/cm2 </li>
+                                <li>Resistencia Tracción. 3Kg/cm2 </li>
+                                <li>Resistencia al Corte. 2Kg/cm2 </li>
+                            </ul>
+                        </li>
+
+                        <li>Temperaturas de Uso:
+                            <ul>
+                                <li>Limite Superior: 120ºC</li>
+                                <li>Limite Superior: -150ºC</li>
+                            </ul>
+                        </li>
+
+                        <li>Norma de Cumplimiento: Brasilera Nº MB 1562</li>
+
+                        <li>Combustibilidad: Autoextinguible</li>
+
+                        <li>Propiedades Térmicas:
+                            <ul>
+                                <li>Conductividad Térmica (Factor K) K.Cal/MHºC  0,013-0,017</li>
+                                <li>Aumento del factor K con la edad, espuma recubierta: Sin cambio</li>
+                                <li>Expansión Térmica, Coeficiente Lineal por ºC: 0,00002</li>
+                            </ul>
+                        </li>
+
+                        <li>Propiedades Físicas:
+                            <ul>
+                                <li>Células Conclusas: 90% del volumen de la espuma.</li>
+                                <li>Permeabilidad al vapor de Agua, Perm-CM: 3,5</li>
+                                <li>Absorción de Agua por M3: 0,7%</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div role="tabpanel" class="text-justify">
+                    <!-- Nav tabs -->
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="placas">
+                            <p>
+                                Las Placas se utilizan para la aislación para superficies planas. De acuerdo a la
+                                temperatura a aislar, se utilizara el espesor correspondiente.
+                            </p>
+                            <ul>
+                                <li>Dimensiones: 990mm x 990mm</li>
+                                <li>Espesores: desde 10mm hasta 300mm</li>
+                                <li>Densidad: 20kg/m3</li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tiras">
+                            <p>Son placas cortadas en tiras para realizar trabajos específicos, de grandes diámetros.
+                            </p>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="medias-cañas">
+                            <p>Utilizados para aislar tuberías de bajas temperaturas.</p>
+                            <ul>
+                                <li>Densidad: 20kg/m3.</li>
+                                <li>Espesor: hasta 6’’ en una capa o dos capas.</li>
+                                <li>Dimensiones: desde ½’’ hasta 10’’ de diámetro.</li>
+                            </ul>
+                            <div class="table-responsive text-center" ng-include src="'media-canas-table.html'"></div>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="segmentos">
+                            <p>Medias cañas cortados en partes para una aislación de tuberías de diámetros mayores. </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+
+        // grab the initial top offset of the navigation
+        var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+
+        // our function that decides weather the navigation bar should have "fixed" css position or not.
+        var sticky_navigation = function(){
+            var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+
+            // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+            // otherwise change it back to relative
+            if (scroll_top > sticky_navigation_offset_top) {
+                $('#sticky_navigation').css({ 'position': 'fixed', 'top':'82px', 'left':'150px' });
+            } else {
+                $('#sticky_navigation').css({ 'position': 'relative', 'top':'0', 'left':'0'  });
+            }
+        };
+
+        // run our function on load
+        sticky_navigation();
+
+        // and run it again every time you scroll
+        $(window).scroll(function() {
+            sticky_navigation();
+        });
+
+    });
+</script>
+
+<footer ng-include src="'footer.html'" class="text-center"></footer>
+</body>
+</html>

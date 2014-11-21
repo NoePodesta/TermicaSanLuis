@@ -461,7 +461,9 @@ h1.green-label{
 
 }
 
-
+#sticky_navigation img{
+    max-width: 150px;
+}
 
 
 
