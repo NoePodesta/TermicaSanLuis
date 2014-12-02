@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/style.less" >
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/css.css">
     <link rel="icon" href="../images/LOGO.ico"/>
     <script src="../js/less-1.7.3.js" type="text/javascript"></script>
     <script src="../js/angular.min.js" type="text/javascript"></script>
@@ -18,42 +19,28 @@
 <body ng-app="store">
 <header ng-include src="'header.html'"></header>
 <div id="aislacion-termica"  class="container-fluid">
-    <div class="row gray-panel icon-products">
-        <div class="container">
-            <div class="col-xs-12 col-sm-4 text-center">
-                <img src="../images/ACUSTICA-VERDE-02-chico.png"/>
-            </div>
-            <div class="col-xs-12 col-sm-4 text-center">
-                <img src="../images/TERMICA-VERDE-01-chico.png"/>
-            </div>
-            <div class="col-xs-12 col-sm-4 text-center">
-                <img src="../images/FACHADAS-VERDE-03-chico.png"/>
-            </div>
-        </div>
-    </div>
     <div class="product-content">
         <div class="row product-menu" ng-include src="'aislacion-termica-menu.html'"></div>
-        <div class="col-xs-12 product-container">
-            <div id="sticky_navigation" class="col-xs-3">
-                <h2>Poliuretano (PUR): </h2>
-                <img src="../images/polies.png"/>
-                <div class="features">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#placas" role="tab" data-toggle="tab">Placas</a></li>
-                        <li role="presentation"><a href="#tiras" role="tab" data-toggle="tab">Tiras</a></li>
-                        <li role="presentation"><a href="#medias-cañas" role="tab" data-toggle="tab">Medias Cañas</a></li>
-                        <li role="presentation"><a href="#segmentos" role="tab" data-toggle="tab">Segmentos</a></li>
-                    </ul>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#poliuretano">Poliuretano (PUR)</a></li>
+                <li><a href="#placas">Placas</a></li>
+                <li><a href="#tiras">Tiras</a></li>
+                <li><a href="#medias-cañas">Medias Cañas</a></li>
+                <li><a href="#segmentos">Segmentos</a></li>
+                ...
+            </ul>
+        </nav>
 
-                </div>
-            </div>
-            <div class="col-xs-offset-4 col-xs-8">
-                <div class="description">
+        <section id="poliuretano">
+            <div class="content">
+                <h2>Section 1</h2>
+                <div class="Poliuretano (PUR)">
                     <p>La espuma rígida de poliuretano es un material de construcción que se utiliza como aislamiento térmico
-                    de alta eficiencia, aislamiento acústico e impermeabilizante, y se fabrica in situ a partir de la
-                    reacción de dos componentes. Esta espuma rígida de poliuretano inyectado, se forma cuando dos
-                    componentes se mezclan físicamente por batido y se introducen en una cavidad donde se realiza la
-                    expansión.</p>
+                        de alta eficiencia, aislamiento acústico e impermeabilizante, y se fabrica in situ a partir de la
+                        reacción de dos componentes. Esta espuma rígida de poliuretano inyectado, se forma cuando dos
+                        componentes se mezclan físicamente por batido y se introducen en una cavidad donde se realiza la
+                        expansión.</p>
 
                     <ul>
                         <li>Utilización: Aislación Frio, Aislación Caliente</li>
@@ -100,79 +87,51 @@
                     </ul>
 
                 </div>
-                <div role="tabpanel" class="text-justify">
-                    <!-- Nav tabs -->
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade in active" id="placas">
-                            <p>
-                                Las Placas se utilizan para la aislación para superficies planas. De acuerdo a la
-                                temperatura a aislar, se utilizara el espesor correspondiente.
-                            </p>
-                            <ul>
-                                <li>Dimensiones: 990mm x 990mm</li>
-                                <li>Espesores: desde 10mm hasta 300mm</li>
-                                <li>Densidad: 20kg/m3</li>
-                            </ul>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tiras">
-                            <p>Son placas cortadas en tiras para realizar trabajos específicos, de grandes diámetros.
-                            </p>
-
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="medias-cañas">
-                            <p>Utilizados para aislar tuberías de bajas temperaturas.</p>
-                            <ul>
-                                <li>Densidad: 20kg/m3.</li>
-                                <li>Espesor: hasta 6’’ en una capa o dos capas.</li>
-                                <li>Dimensiones: desde ½’’ hasta 10’’ de diámetro.</li>
-                            </ul>
-                            <div class="table-responsive text-center" ng-include src="'media-canas-table.html'"></div>
-
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="segmentos">
-                            <p>Medias cañas cortados en partes para una aislación de tuberías de diámetros mayores. </p>
-                        </div>
-                    </div>
-
-                </div>
             </div>
+        </section>
+        <section id="placas">
+            <div class="content">
+                <h2>Placas </h2>
+                <p>
+                    Las Placas se utilizan para la aislación para superficies planas. De acuerdo a la
+                    temperatura a aislar, se utilizara el espesor correspondiente.
+                </p>
+                <ul>
+                    <li>Dimensiones: 990mm x 990mm</li>
+                    <li>Espesores: desde 10mm hasta 300mm</li>
+                    <li>Densidad: 40kg/m3</li>
+                </ul>
+            </div>
+        </section>
+        <section id="tiras">
+            <div class="content">
+                <h2>Tiras</h2>
+                <p>Son placas cortadas en tiras para realizar trabajos específicos, de grandes diámetros.
+                </p>
 
+            </div>
+        </section>
+        <section id="medias-cañas">
+            <div class="content">
+                <h2>Medias Cañas</h2>
+                <p>Utilizados para aislar tuberías de bajas temperaturas.</p>
+                <ul>
+                    <li>Densidad: 40kg/m3.</li>
+                    <li>Espesor: hasta 6’’ en una capa o dos capas.</li>
+                    <li>Dimensiones: desde ½’’ hasta 10’’ de diámetro.</li>
+                </ul>
+                <div class="table-responsive text-center" ng-include src="'media-canas-table.html'"></div>
 
-        </div>
+            </div>
+        </section>
+        <section id="segmentos">
+            <div class="content">
+                <h2>Segmentos</h2>
+                <p>Medias cañas cortados en partes para una aislación de tuberías de diámetros mayores. </p>
+            </div>
+        </section>
     </div>
 </div>
-<script>
-    $(function() {
-
-        // grab the initial top offset of the navigation
-        var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
-
-        // our function that decides weather the navigation bar should have "fixed" css position or not.
-        var sticky_navigation = function(){
-            var scroll_top = $(window).scrollTop(); // our current vertical position from the top
-
-            // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-            // otherwise change it back to relative
-            if (scroll_top > sticky_navigation_offset_top) {
-                $('#sticky_navigation').css({ 'position': 'fixed', 'top':'82px', 'left':'150px' });
-            } else {
-                $('#sticky_navigation').css({ 'position': 'relative', 'top':'0', 'left':'0'  });
-            }
-        };
-
-        // run our function on load
-        sticky_navigation();
-
-        // and run it again every time you scroll
-        $(window).scroll(function() {
-            sticky_navigation();
-        });
-
-    });
-</script>
-
 <footer ng-include src="'footer.html'" class="text-center"></footer>
 </body>
 </html>

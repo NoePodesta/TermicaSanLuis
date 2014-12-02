@@ -465,5 +465,56 @@ h1.green-label{
     max-width: 150px;
 }
 
+#nav-menu{
+    position: fixed;
+    top: 8em;
+    right: 3em;
+    left: auto;
+    bottom: auto;
+    z-index: 9;
+    text-shadow: none;
+    font-size: 0.85em;
+}
+
+nav ul, nav ol, nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu ul {
+    overflow: hidden;
+    background: #564a44;
+    background: rgba(0,0,0,0.5);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#nav-menu li {
+    float: left;
+    margin: 3px 5px;
+}
+
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu a {
+    display: block;
+    padding: 0.2em 0.6em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#nav-menu ul {
+    -moz-border-radius: 17px;
+    -webkit-border-radius: 17px;
+    border-radius: 17px;
+}
+
 
 
