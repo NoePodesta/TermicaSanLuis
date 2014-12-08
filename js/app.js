@@ -35,48 +35,115 @@ angular.module('store', ['ui.bootstrap'])
             var mapBA = new google.maps.Map(elementMapBA,mapBAOptions);
         }
 
+        $scope.status = {
+            isFirstOpen: true,
+            isFirstDisabled: false
+        };
 
-        (function($){
-            $(window).load(function(){
-
-                /* Page Scroll to id fn call */
-                $("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
-                    highlightSelector:"#navigation-menu a"
-                });
-
-                /* demo functions */
-                $("a[rel='next']").click(function(e){
-                    e.preventDefault();
-                    var to=$(this).parent().parent("section").next().attr("id");
-                    $.mPageScroll2id("scrollTo",to);
-                });
-
-            });
-        })();
 }])
+    .controller('Product', ['$scope', function(scope){
+        scope.status = {
+            isFirstOpen: true,
+            isSecondOpen: true
+        };
 
-.controller('Products', ['$scope', function(scope){
-        (function($){
-            $(window).load(function(){
+}])
+    .directive('anchorScroll',function() {
 
-                /* Page Scroll to id fn call */
-                $("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
-                    highlightSelector:"#navigation-menu a"
+        return {
+            restrict: 'A',
+            link: function (scope, element, attr ) {
+                element.on('click', function(event){
+                    event.preventDefault();
+
+                    var id = '#' + attr.epiAnchorScroll;
+                    var selector = angular.element(document.querySelectorAll(id));
+
+                    var startY = currentYPosition();
+                    var stopY = elmYPosition(selector);
+                    var distance = stopY > startY ? stopY - startY : startY - stopY;
+                    if (distance < 100) {
+                        scrollTo(0, stopY);
+                    } else {
+                        var speed = Math.round(distance / 20);
+                        if (speed >= 20) speed = 20;
+                        var step = Math.round(distance / 25);
+                        var leapY = stopY > startY ? startY + step : startY - step;
+                        var timer = 0;
+                        if (stopY > startY) {
+                            for (var i=startY; i<stopY; i+=step ) {
+                                setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                                leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+                            }
+                        } else {
+                            for (var j=startY; j>stopY; j-=step ) {
+                                setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                                leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+                            }
+                        }
+                    }
+
+                    function currentYPosition() {
+                        // Firefox, Chrome, Opera, Safari
+                        if (self.pageYOffset) return self.pageYOffset;
+                        // Internet Explorer 6 - standards mode
+                        if (document.documentElement && document.documentElement.scrollTop)
+                            return document.documentElement.scrollTop;
+                        // Internet Explorer 6, 7 and 8
+                        if (document.body.scrollTop) return document.body.scrollTop;
+                        return 0;
+                    }
+
+                    function elmYPosition(eID) {
+                        var elm = document.getElementById(attr.epiAnchorScroll);
+                        var y = elm.offsetTop;
+                        var node = elm;
+                        while (node.offsetParent && node.offsetParent != document.body) {
+                            node = node.offsetParent;
+                            y += node.offsetTop;
+                        } return y;
+                    }
+
                 });
+            }
+        }
+    })
 
-                /* demo functions */
-                $("a[rel='next']").click(function(e){
-                    e.preventDefault();
-                    var to=$(this).parent().parent("section").next().attr("id");
-                    $.mPageScroll2id("scrollTo",to);
-                });
+.directive('aislacionesTermicasMenu',function() {
 
-            });
-        })(jQuery);
+    return {
+        restrict: 'A',
+        scope: {
+            active: '@'
+        },
+        link: function (scope, element, attr ) {
 
+        },
+        template:
+            'div>'+
+            'accordion>'+
+            '<accordion-group  is-open="status.open">' +
+                '<accordion-heading>' +
+                    '<p>Frio <i class="pull-right glyphicon"></i></p>' +
+                '</accordion-heading>' +
+                '<a href="poliestireno.html">Poliestireno (EPS) <i class="fa fa-angle-down icon-menu"></i></a>' +
+                '<a href="poliuretano.html">Poliuretano (PUR) <i class="fa fa-angle-down icon-menu"></i></a>' +
+                '<a>Poliisocianato (PIR)</a>' +
+                '<a>Foam Glass</a>' +
+            '</accordion-group>' +
+            '</accordion>' +
+        '<accordion>' +
+            '<accordion-group  is-open="status.open">' +
+                '<accordion-heading>' +
+                    '<p>Calor <i class="pull-right glyphicon"></i></p>' +
+                '</accordion-heading>' +
+                '<a href="poliestireno.html">Lana Mineral <i class="fa fa-angle-down icon-menu"></i></a>' +
+            '</accordion-group>' +
+        '</accordion>' +
+        '</div>'
 
-}]);
-
+    }
+});
 
 var slides = [
     {

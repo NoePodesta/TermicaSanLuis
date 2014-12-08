@@ -15,6 +15,10 @@ strong{
     font-family: TradeGothicLTStd-Bd2;
 }
 
+body{
+    height: 100%;
+}
+
 footer{
     background-color: #01573E;
     color: #A0A0A0;
@@ -393,8 +397,20 @@ h1.green-label{
 }
 
 .product-menu{
-    width: 200px;
-    display: inline-block;
+    position: fixed;
+    margin-top: 10px;
+
+}
+
+.product-menu a{
+    display: block;
+}
+
+@media (min-width: 768px){
+    .product-menu{
+        width: 250px;
+    }
+
 }
 
 .product-menu ul, .product-menu li{
@@ -422,6 +438,7 @@ h1.green-label{
 .product-menu ul li a:hover .icon-menu:before{
     content: "\f107";
 }
+
 .product-container{
     padding: 10px 0 0 10px;
     text-align: center;
@@ -439,9 +456,48 @@ h1.green-label{
     color: #01573E;
 }
 
+
+
+
 .product-content{
-    display: inline-flex;
+    margin-top: 81px;
 }
+
+.product-inner{
+    margin-left: 250px;
+    padding: 10px;
+}
+
+.product-inner img.product{
+    max-width: 200px;
+}
+
+.product-inner ul, .product-inner li{
+    list-style: none;
+}
+
+.product-inner ul.features li:before {
+    content: url('../images/BULLETS-06-small.png');
+    vertical-align: text-top;
+    padding-right: 5px;
+}
+
+.product-inner ul.features ul li{
+    padding-left: 20px;
+}
+
+.division{
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #d3d3d3 ;
+}
+
+.title{
+    color: #01573E;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
 
 .icon-menu{
     float: right;
@@ -449,9 +505,12 @@ h1.green-label{
 }
 
 #media-cana-table{
-    width: 80%;
+    width: 60%;
     font-size: 12px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
 }
 
 
@@ -467,13 +526,14 @@ h1.green-label{
 
 #nav-menu{
     position: fixed;
-    top: 8em;
-    right: 3em;
-    left: auto;
-    bottom: auto;
+    top: 91px;
+    right: 25px;
     z-index: 9;
     text-shadow: none;
     font-size: 0.85em;
+    background-color: #01573E;
+    border-radius: 10px;
+    background: rgba(1,87,52,0.7);
 }
 
 nav ul, nav ol, nav li {
@@ -482,39 +542,32 @@ nav ul, nav ol, nav li {
     padding: 0;
 }
 
-#nav-menu ul {
-    overflow: hidden;
-    background: #564a44;
-    background: rgba(0,0,0,0.5);
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
 #nav-menu li {
-    float: left;
+    display: inline;
     margin: 3px 5px;
+    list-style: none;
 }
 
-nav li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 #nav-menu a {
-    display: block;
-    padding: 0.2em 0.6em;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    color: white;
 }
 
 #nav-menu ul {
     -moz-border-radius: 17px;
     -webkit-border-radius: 17px;
     border-radius: 17px;
+    margin: 10px;
 }
+
+.scroll-target{
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+    float: left;
+}
+
 
 
 

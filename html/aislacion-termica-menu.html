@@ -1,17 +1,23 @@
-<ul>
-    <li>
-        <a>Frio <i class="fa fa-angle-right icon-menu"></i></a>
-        <ul>
-            <li><a href="poliestireno.html">Poliestireno (EPS) <i class="fa fa-angle-down icon-menu"></i></a></li>
-            <li><a href="poliuretano.html">Poliuretano (PUR) <i class="fa fa-angle-down icon-menu"></i></a></li>
-            <li>Poliisocianato (PIR)</li>
-            <li>Foam Glass</li>
-        </ul>
-    </li>
-    <li>
-        <a>Calor</a>
-        <ul>
-            <li>Lana Mieral</li>
-        </ul>
-    </li>
-</ul>
+<div>
+    <accordion>
+        <accordion-group is-open="status.isFirstOpen">
+            <accordion-heading>
+                <p>Frio <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></p>
+            </accordion-heading>
+            <a href="poliestireno.html">Poliestireno (EPS) <i class="fa fa-angle-right icon-menu"></i></a>
+            <a href="poliisocianurato.html">Poliisocianurato (PIR) <i class="fa fa-angle-right icon-menu"></i></a>
+            <a href="poliuretano.html">Poliuretano (PUR) <i class="fa fa-angle-right icon-menu"></i></a>
+            <a>Foam Glass <i class="fa fa-angle-down icon-menu"></i></a>
+        </accordion-group>
+    </accordion>
+    <accordion>
+        <accordion-group   is-open="status.isSecondOpen">
+            <accordion-heading>
+                <p>Calor <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></p>
+            </accordion-heading>
+            <a href="poliestireno.html">Lana Mineral <i class="fa fa-angle-down icon-menu"></i></a>
+       </accordion-group>
+    </accordion>
+</div>
+
+

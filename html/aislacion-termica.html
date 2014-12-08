@@ -17,7 +17,7 @@
 </head>
 <body ng-app="store">
 <header ng-include src="'header.html'"></header>
-<div id="aislacion-termica"  class="container-fluid">
+<div ng-controller="Product" id="aislacion-termica"  class="container-fluid">
     <div class="row gray-panel icon-products">
         <div class="container">
             <div class="col-xs-12 col-sm-4 text-center">
@@ -32,15 +32,17 @@
         </div>
     </div>
     <div class="product-content">
-        <div class="product-menu" ng-include src="'aislacion-termica-menu.html'"></div>
-        <div class="col-xs-12 product-container">
-            <img src="../images/aislacion-termica.png">
-            <div class="description">El mejor aislante térmico es el vacío, pero debido a la gran dificultad para obtener y mantener condiciones de
-                vacío, éste se emplea en muy pocas ocasiones. En la práctica se utiliza aire, que gracias a su baja conductividad
-                térmica y un bajo coeficiente de absorción de la radiación, constituye un elemento muy resistente al paso de calor.
-                Sin embargo, el fenómeno de convección que se origina en las cámaras de aire aumenta sensiblemente su capacidad de
-                transferencia térmica. Además el aire debe de estar seco, sin humedad, lo que es difícil de conseguir en las cámaras
-                de aire.
+        <div class="row col-xs-2 col-sm-3 product-menu" ng-include src="'aislacion-termica-menu.html'"></div>
+        <div class="product-inner">
+            <div class="col-xs-12 product-container">
+                <img src="../images/aislacion-termica.png">
+                <div class="description">El mejor aislante térmico es el vacío, pero debido a la gran dificultad para obtener y mantener condiciones de
+                    vacío, éste se emplea en muy pocas ocasiones. En la práctica se utiliza aire, que gracias a su baja conductividad
+                    térmica y un bajo coeficiente de absorción de la radiación, constituye un elemento muy resistente al paso de calor.
+                    Sin embargo, el fenómeno de convección que se origina en las cámaras de aire aumenta sensiblemente su capacidad de
+                    transferencia térmica. Además el aire debe de estar seco, sin humedad, lo que es difícil de conseguir en las cámaras
+                    de aire.
+                </div>
             </div>
         </div>
     </div>
