@@ -568,6 +568,15 @@ nav ul, nav ol, nav li {
     float: left;
 }
 
+#aislacion-termica .product-content{
+    margin-top: 10px;
+}
+
+#aislacion-termica footer{
+    position: absolute;
+    bottom: 0;
+}
+
 
 
 
