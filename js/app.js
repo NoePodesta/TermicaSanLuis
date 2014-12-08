@@ -95,7 +95,7 @@ angular.module('store', ['ui.bootstrap'])
                     }
 
                     function elmYPosition(eID) {
-                        var elm = document.getElementById(attr.epiAnchorScroll);
+                        var elm = document.getElementById(attr.anchorScroll);
                         var y = elm.offsetTop;
                         var node = elm;
                         while (node.offsetParent && node.offsetParent != document.body) {
