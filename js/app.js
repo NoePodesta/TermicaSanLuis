@@ -34,12 +34,6 @@ angular.module('store', ['ui.bootstrap'])
 
             var mapBA = new google.maps.Map(elementMapBA,mapBAOptions);
         }
-
-        $scope.status = {
-            isFirstOpen: true,
-            isFirstDisabled: false
-        };
-
 }])
     .controller('Product', ['$scope', function(scope){
         scope.status = {
