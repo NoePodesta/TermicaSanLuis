@@ -85,7 +85,7 @@ ul, li{
     }
 }
 
-a.btn-download{
+a.btn-download, a.btn-download:hover {
     background: #01573E;
     padding: 2px 20px !important;
     color: white !important;
