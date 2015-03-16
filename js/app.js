@@ -142,7 +142,8 @@ angular.module('store', ['ui.bootstrap'])
 var slides = [
     {
         image: '../images/index/Banner/BENEF-DE-AISLAR1.jpg' ,
-        text: 'imagen de ...'
+        text: 'imagen de ...',
+        link: 'beneficios-de-aislar.html'
     },
     {
         image: '../images/index/Banner/FOTO-FABRICA1.jpg' ,
@@ -172,7 +173,8 @@ var slides = [
     },
     {
         image: '../images/index/Banner/NEWS.jpg' ,
-        text: 'imagen de ...'
+        text: 'imagen de ...',
+        link: 'noticias.html'
     }
 ];
 

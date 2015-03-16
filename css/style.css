@@ -33,6 +33,10 @@ ul, li{
     padding: 0;
 }
 
+/*#quality-policy img.fabric, #our-company img.fabric, #env-responsability img.fabric{*/
+    /*width: 100%;*/
+/*}*/
+
 #our-company .container li:before, #quality-policy .container li:before{
     content: url('../images/BULLETS-06-small.png');
     vertical-align: text-top;
@@ -69,6 +73,16 @@ ul, li{
     z-index: 1000;
     width: 100%;
 }
+.navbar-nav > li > a{
+    padding: 0 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li > a:active {
+    border-bottom: 3px solid #e6e533 ;
+}
 
 .navbar-brand{
     height: 80px;
@@ -85,11 +99,13 @@ ul, li{
     }
 }
 
-a.btn-download, a.btn-download:hover {
+.navbar-nav > li > a.btn-download, .navbar-default .navbar-nav > li > a.btn-download:hover {
     background: #01573E;
     padding: 2px 20px !important;
     color: white !important;
     font-size: 10px !important;
+    margin-top: 0;
+    border-bottom: 0 solid transparent;
 }
 
 
@@ -97,6 +113,7 @@ a.btn-download, a.btn-download:hover {
     text-transform: uppercase;
     color: #A0A0A0;
     font-size: 12px;
+    cursor: pointer;
 }
 .dropdown-menu > li > a{
     color: #000000;
@@ -108,6 +125,12 @@ a.btn-download, a.btn-download:hover {
     background-color: white;
     color: #01573E;
     outline: none;
+    border-bottom: 3px solid transparent;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #eee;
+    border-color: #e6e533;
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
@@ -117,30 +140,6 @@ a.btn-download, a.btn-download:hover {
 
 .navbar-default .navbar-nav > li > a:hover{
     color: #01573E;
-}
-
-.navbar-default .navbar-nav > li > a.our-company-menu:hover{
-    background: url('../images/prueba-ne.png') no-repeat;
-}
-
-.navbar-default .navbar-nav > li > a.products-menu:hover{
-    background: url('../images/products-hover.png') no-repeat;
-}
-
-.navbar-default .navbar-nav > li > a.benefit-menu:hover{
-    background: url('../images/beneficios-hover.png') no-repeat;
-}
-
-.navbar-default .navbar-nav > li > a.success-case-menu:hover {
-    background: url('../images/exito-hover.png') no-repeat;
-}
-
-.navbar-default .navbar-nav > li > a.news-menu:hover {
-    background: url('../images/TERMICA-WEB-MENUSELECT-02-small.png') no-repeat;
-}
-
-.navbar-default .navbar-nav > li > a.contact-menu:hover{
-    background: url('../images/TERMICA-WEB-MENUSELECT-02-small.png') no-repeat;
 }
 
 
@@ -578,8 +577,8 @@ nav ul, nav ol, nav li {
 }
 
 
-#lanaMineralId .product-inner{
-    margin-left: 0px;
+#lanaMineralId .product-inner, #benefcios .product-inner{
+    margin-left: 0;
 }
 
 .underline{
