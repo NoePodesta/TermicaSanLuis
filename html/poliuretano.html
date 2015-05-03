@@ -17,140 +17,148 @@
 </head>
 <body>
 <header ng-include src="'header.html'"></header>
-<div ng-controller="Product" id="poliuretanoId"  class="container-fluid">
+<div ng-controller="Product" id="poliuretanoId" class="container-fluid">
     <div class="product-content">
         <div class="row col-xs-2 col-sm-3 product-menu" ng-include src="'aislacion-termica-menu.html'"></div>
         <div class="product-inner">
-        <nav id="nav-menu">
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#poliuretano" anchor-scroll="poliuretano">Poliuretano (PUR)</a></li>
+                    <li><a href="#placas" anchor-scroll="placas">Placas</a></li>
+                    <li><a href="#tiras" anchor-scroll="tiras">Tiras</a></li>
+                    <li><a href="#segmentos" anchor-scroll="segmentos">Segmentos</a></li>
+                    <li><a href="#medias-canas" anchor-scroll="medias-canas">Medias Cañas</a></li>
+                </ul>
+            </nav>
+
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="aislacion-termica.html">Aislación Térmica</a></li>
+                <li>Frio</li>
+                <li class="active">Poliuretano (PUR)</li>
+            </ol>
+
             <ul>
-                <li><a href="#poliuretano" anchor-scroll="poliuretano">Poliuretano (PUR)</a></li>
-                <li><a href="#placas" anchor-scroll="placas">Placas</a></li>
-                <li><a href="#tiras" anchor-scroll="tiras">Tiras</a></li>
-                <li><a href="#segmentos" anchor-scroll="segmentos">Segmentos</a></li>
-                <li><a href="#medias-canas" anchor-scroll="medias-canas">Medias Cañas</a></li>
+                <li class="division">
+                    <h1 class="title">
+                        <span class="scroll-target" id="poliuretano"></span>
+                        Poliuretano (PUR)
+                    </h1>
+
+                    <div class="content">
+                        <p>La espuma rígida de poliuretano es un material de construcción que se utiliza como
+                            aislamiento térmico
+                            de alta eficiencia, aislamiento acústico e impermeabilizante, y se fabrica in situ a partir
+                            de la
+                            reacción de dos componentes. Esta espuma rígida de poliuretano inyectado, se forma cuando
+                            dos
+                            componentes se mezclan físicamente por batido y se introducen en una cavidad donde se
+                            realiza la
+                            expansión.
+                        </p>
+                        <ul class="features">
+                            <li><strong>Utilización:</strong> Aislación Frio, Aislación Caliente</li>
+
+                            <li><strong>Composición:</strong> Poliol – Isocianato</li>
+
+                            <li><strong>Densidad:</strong> 40kg/m3</li>
+
+                            <li><strong>Propiedades Mecánicas:</strong>
+                                <ul>
+                                    <li>Resistencia a la Compresión: 1,5Kg/cm2</li>
+                                    <li>Resistencia Tracción: 3Kg/cm2</li>
+                                    <li>Resistencia al Corte: 2Kg/cm2</li>
+                                </ul>
+                            </li>
+
+                            <li><strong>Temperaturas de Uso:</strong>
+                                <ul>
+                                    <li>Limite Superior: 120ºC</li>
+                                    <li>Limite Superior: -150ºC</li>
+                                </ul>
+                            </li>
+
+                            <li><strong>Norma de Cumplimiento:</strong> Brasilera Nº MB 1562</li>
+
+                            <li><strong>Combustibilidad:</strong> Autoextinguible</li>
+
+                            <li><strong>Propiedades Térmicas:</strong>
+                                <ul>
+                                    <li>Conductividad Térmica (Factor K) K.Cal/MHºC 0,013-0,017</li>
+                                    <li>Aumento del factor K con la edad, espuma recubierta: Sin cambio</li>
+                                    <li>Expansión Térmica, Coeficiente Lineal por ºC: 0,00002</li>
+                                </ul>
+                            </li>
+
+                            <li><strong>Propiedades Físicas:</strong>
+                                <ul>
+                                    <li>Células Conclusas: 90% del volumen de la espuma.</li>
+                                    <li>Permeabilidad al vapor de Agua, Perm-CM: 3,5</li>
+                                    <li>Absorción de Agua por M3: 0,7%</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="division">
+                    <h2 class="title">
+                        <span class="scroll-target" id="placas"></span>
+                        Placas
+                    </h2>
+
+                    <div class="content">
+                        <p>
+                            Las Placas se utilizan para la aislación para superficies planas. De acuerdo a la
+                            temperatura a aislar, se utilizara el espesor correspondiente.
+                        </p>
+                        <ul class="features">
+                            <li><strong>Dimensiones:</strong> 990mm x 990mm</li>
+                            <li><strong>Espesores:</strong> desde 10mm hasta 300mm</li>
+                            <li><strong>Densidad:</strong> 40kg/m3</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="division">
+                    <h2 class="title">
+                        <span class="scroll-target" id="tiras"></span>
+                        Tiras
+                    </h2>
+
+                    <div class="content">
+                        <p>Son placas cortadas en tiras para realizar trabajos específicos, de grandes diámetros.
+                        </p>
+                    </div>
+                </li>
+                <li class="division">
+                    <h2 class="title">
+                        <span class="scroll-target" id="segmentos"></span>
+                        Segmentos
+                    </h2>
+
+                    <div class="content">
+                        <p>Medias cañas cortados en partes para una aislación de tuberías de diámetros mayores. </p>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="title">
+                        <span class="scroll-target" id="medias-canas"></span>
+                        Medias Cañas
+                    </h2>
+
+                    <div class="content">
+                        <p>Utilizados para aislar tuberías de bajas temperaturas.</p>
+                        <ul class="features">
+                            <li><strong>Densidad:</strong> 40kg/m3.</li>
+                            <li><strong>Espesor:</strong> hasta 6’’ en una capa o dos capas.</li>
+                            <li><strong>Dimensiones:</strong> desde ½’’ hasta 10’’ de diámetro.</li>
+                        </ul>
+                        <div class="table-responsive text-center" ng-include src="'media-canas-table.html'"></div>
+                    </div>
+                </li>
             </ul>
-        </nav>
-
-        <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Productos</a></li>
-            <li><a href="aislacion-termica.html">Aislación Térmica</a></li>
-            <li>Frio</li>
-            <li class="active">Poliuretano (PUR) </li>
-        </ol>
-
-        <ul>
-            <li class="division">
-                <h1 class="title">
-                    <span class="scroll-target" id="poliuretano"></span>
-                    Poliuretano (PUR)
-                </h1>
-                <div class="content">
-                    <p>La espuma rígida de poliuretano es un material de construcción que se utiliza como aislamiento térmico
-                        de alta eficiencia, aislamiento acústico e impermeabilizante, y se fabrica in situ a partir de la
-                        reacción de dos componentes. Esta espuma rígida de poliuretano inyectado, se forma cuando dos
-                        componentes se mezclan físicamente por batido y se introducen en una cavidad donde se realiza la
-                        expansión.
-                    </p>
-                    <ul class="features">
-                        <li><strong>Utilización:</strong> Aislación Frio, Aislación Caliente</li>
-
-                        <li><strong>Composición:</strong> Poliol – Isocianato</li>
-
-                        <li><strong>Densidad:</strong>  40kg/m3</li>
-
-                        <li><strong>Propiedades Mecánicas:</strong>
-                            <ul>
-                                <li>Resistencia a la Compresión: 1,5Kg/cm2 </li>
-                                <li>Resistencia Tracción: 3Kg/cm2 </li>
-                                <li>Resistencia al Corte: 2Kg/cm2 </li>
-                            </ul>
-                        </li>
-
-                        <li><strong>Temperaturas de Uso:</strong>
-                            <ul>
-                                <li>Limite Superior: 120ºC</li>
-                                <li>Limite Superior: -150ºC</li>
-                            </ul>
-                        </li>
-
-                        <li><strong>Norma de Cumplimiento:</strong> Brasilera Nº MB 1562</li>
-
-                        <li><strong>Combustibilidad:</strong> Autoextinguible</li>
-
-                        <li><strong>Propiedades Térmicas:</strong>
-                            <ul>
-                                <li>Conductividad Térmica (Factor K) K.Cal/MHºC  0,013-0,017</li>
-                                <li>Aumento del factor K con la edad, espuma recubierta: Sin cambio</li>
-                                <li>Expansión Térmica, Coeficiente Lineal por ºC: 0,00002</li>
-                            </ul>
-                        </li>
-
-                        <li><strong>Propiedades Físicas:</strong>
-                            <ul>
-                                <li>Células Conclusas: 90% del volumen de la espuma.</li>
-                                <li>Permeabilidad al vapor de Agua, Perm-CM: 3,5</li>
-                                <li>Absorción de Agua por M3: 0,7%</li>
-                            </ul>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </li>
-            <li class="division">
-                <h2 class="title">
-                    <span class="scroll-target" id="placas"></span>
-                    Placas
-                </h2>
-                <div class="content">
-                    <p>
-                        Las Placas se utilizan para la aislación para superficies planas. De acuerdo a la
-                        temperatura a aislar, se utilizara el espesor correspondiente.
-                    </p>
-                    <ul class="features">
-                        <li><strong>Dimensiones:</strong> 990mm x 990mm</li>
-                        <li><strong>Espesores:</strong> desde 10mm hasta 300mm</li>
-                        <li><strong>Densidad:</strong> 40kg/m3</li>
-                    </ul>
-                </div>
-            </li>
-            <li class="division">
-                <h2 class="title">
-                    <span class="scroll-target" id="tiras"></span>
-                    Tiras
-                </h2>
-                <div class="content">
-                    <p>Son placas cortadas en tiras para realizar trabajos específicos, de grandes diámetros.
-                    </p>
-                </div>
-            </li>
-            <li class="division">
-                <h2 class="title">
-                    <span class="scroll-target" id="segmentos"></span>
-                    Segmentos
-                </h2>
-
-                <div class="content">
-                    <p>Medias cañas cortados en partes para una aislación de tuberías de diámetros mayores. </p>
-                </div>
-            </li>
-            <li>
-                <h2 class="title">
-                    <span class="scroll-target" id="medias-canas"></span>
-                    Medias Cañas
-                </h2>
-                <div class="content">
-                    <p>Utilizados para aislar tuberías de bajas temperaturas.</p>
-                    <ul class="features">
-                        <li><strong>Densidad:</strong> 40kg/m3.</li>
-                        <li><strong>Espesor:</strong> hasta 6’’ en una capa o dos capas.</li>
-                        <li><strong>Dimensiones:</strong> desde ½’’ hasta 10’’ de diámetro.</li>
-                    </ul>
-                    <div class="table-responsive text-center" ng-include src="'media-canas-table.html'"></div>
-                </div>
-            </li>
-        </ul>
         </div>
     </div>
 </div>

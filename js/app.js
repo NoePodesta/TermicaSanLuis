@@ -3,7 +3,7 @@
  */
 angular.module('store', ['ui.bootstrap'])
 
-.controller('StoreController', ['$scope', function(scope){
+    .controller('StoreController', ['$scope', function (scope) {
         scope.slides = slides;
         scope.myInterval = 2500;
 //        initialize();
@@ -15,7 +15,7 @@ angular.module('store', ['ui.bootstrap'])
                 zoom: 8,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            var mapSL = new google.maps.Map(elementMapSL,mapSLOptions);
+            var mapSL = new google.maps.Map(elementMapSL, mapSLOptions);
 
             var elementMapSM = document.getElementById('map_of_SM');
             var mapSMOptions = {
@@ -23,7 +23,7 @@ angular.module('store', ['ui.bootstrap'])
                 zoom: 8,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            var mapSM = new google.maps.Map(elementMapSM,mapSMOptions);
+            var mapSM = new google.maps.Map(elementMapSM, mapSMOptions);
 
             var elementMapBA = document.getElementById('map_of_BA');
             var mapBAOptions = {
@@ -32,22 +32,22 @@ angular.module('store', ['ui.bootstrap'])
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
-            var mapBA = new google.maps.Map(elementMapBA,mapBAOptions);
+            var mapBA = new google.maps.Map(elementMapBA, mapBAOptions);
         }
-}])
-    .controller('Product', ['$scope', function(scope){
+    }])
+    .controller('Product', ['$scope', function (scope) {
         scope.status = {
             isFirstOpen: true,
             isSecondOpen: true
         };
 
-}])
-    .directive('anchorScroll',function() {
+    }])
+    .directive('anchorScroll', function () {
 
         return {
             restrict: 'A',
-            link: function (scope, element, attr ) {
-                element.on('click', function(event){
+            link: function (scope, element, attr) {
+                element.on('click', function (event) {
                     event.preventDefault();
 
                     var id = '#' + attr.epiAnchorScroll;
@@ -65,14 +65,18 @@ angular.module('store', ['ui.bootstrap'])
                         var leapY = stopY > startY ? startY + step : startY - step;
                         var timer = 0;
                         if (stopY > startY) {
-                            for (var i=startY; i<stopY; i+=step ) {
-                                setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
-                                leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+                            for (var i = startY; i < stopY; i += step) {
+                                setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
+                                leapY += step;
+                                if (leapY > stopY) leapY = stopY;
+                                timer++;
                             }
                         } else {
-                            for (var j=startY; j>stopY; j-=step ) {
-                                setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
-                                leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+                            for (var j = startY; j > stopY; j -= step) {
+                                setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
+                                leapY -= step;
+                                if (leapY < stopY) leapY = stopY;
+                                timer++;
                             }
                         }
                     }
@@ -95,7 +99,8 @@ angular.module('store', ['ui.bootstrap'])
                         while (node.offsetParent && node.offsetParent != document.body) {
                             node = node.offsetParent;
                             y += node.offsetTop;
-                        } return y;
+                        }
+                        return y;
                     }
 
                 });
@@ -103,76 +108,77 @@ angular.module('store', ['ui.bootstrap'])
         }
     })
 
-.directive('aislacionesTermicasMenu',function() {
+    .directive('aislacionesTermicasMenu', function () {
 
-    return {
-        restrict: 'A',
-        scope: {
-            active: '@'
-        },
-        link: function (scope, element, attr ) {
+        return {
+            restrict: 'A',
+            scope: {
+                active: '@'
+            },
+            link: function (scope, element, attr) {
 
-        },
-        template:
-            'div>'+
-            'accordion>'+
-            '<accordion-group  is-open="status.open">' +
+            },
+            template: 'div>' +
+                'accordion>' +
+                '<accordion-group  is-open="status.open">' +
                 '<accordion-heading>' +
-                    '<p>Frio <i class="pull-right glyphicon"></i></p>' +
+                '<p>Frio <i class="pull-right glyphicon"></i></p>' +
                 '</accordion-heading>' +
                 '<a href="poliestireno.html">Poliestireno (EPS) <i class="fa fa-angle-down icon-menu"></i></a>' +
                 '<a href="poliuretano.html">Poliuretano (PUR) <i class="fa fa-angle-down icon-menu"></i></a>' +
                 '<a>Poliisocianato (PIR)</a>' +
                 '<a>Foam Glass</a>' +
-            '</accordion-group>' +
-            '</accordion>' +
-        '<accordion>' +
-            '<accordion-group  is-open="status.open">' +
+                '</accordion-group>' +
+                '</accordion>' +
+                '<accordion>' +
+                '<accordion-group  is-open="status.open">' +
                 '<accordion-heading>' +
-                    '<p>Calor <i class="pull-right glyphicon"></i></p>' +
+                '<p>Calor <i class="pull-right glyphicon"></i></p>' +
                 '</accordion-heading>' +
                 '<a href="poliestireno.html">Lana Mineral <i class="fa fa-angle-down icon-menu"></i></a>' +
-            '</accordion-group>' +
-        '</accordion>' +
-        '</div>'
+                '</accordion-group>' +
+                '</accordion>' +
+                '</div>'
 
-    }
-});
+        }
+    });
 
 var slides = [
     {
-        image: '../images/index/Banner/BENEF-DE-AISLAR1.jpg' ,
+        image: '../images/index/Banner/BENEF-DE-AISLAR1.jpg',
         text: 'imagen de ...',
         link: 'beneficios-de-aislar.html'
     },
     {
-        image: '../images/index/Banner/FOTO-FABRICA1.jpg' ,
+        image: '../images/index/Banner/FOTO-FABRICA1.jpg',
         text: 'imagen de ...'
     },
     {
-        image: '../images/index/Banner/FOTO-FABRICA2.jpg' ,
+        image: '../images/index/Banner/FOTO-FABRICA2.jpg',
         text: 'imagen de ...'
     },
     {
-        image: '../images/index/Banner/FOTO-FABRICA3.jpg' ,
+        image: '../images/index/Banner/FOTO-FABRICA3.jpg',
         text: 'imagen de ...'
     },
     {
-        image: '../images/index/Banner/FOTO-FABRICA4.jpg' ,
+        image: '../images/index/Banner/FOTO-FABRICA4.jpg',
         text: 'imagen de ...'
     },
     {
-        image: '../images/index/Banner/FOTO-FABRICA5.jpg' ,
-        text: 'imagen de ...'
-    },                                                  {
-        image: '../images/index/Banner/FOTO-FABRICA6.jpg' ,
-        text: 'imagen de ...'
-    },                                                  {
-        image: '../images/index/Banner/FOTO-FABRICA7.jpg' ,
+        image: '../images/index/Banner/FOTO-FABRICA5.jpg',
         text: 'imagen de ...'
     },
     {
-        image: '../images/index/Banner/NEWS.jpg' ,
+        image: '../images/index/Banner/FOTO-FABRICA6.jpg',
+        text: 'imagen de ...'
+    },
+    {
+        image: '../images/index/Banner/FOTO-FABRICA7.jpg',
+        text: 'imagen de ...'
+    },
+    {
+        image: '../images/index/Banner/NEWS.jpg',
         text: 'imagen de ...',
         link: 'noticias.html'
     }

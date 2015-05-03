@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.less" >
+    <link rel="stylesheet" href="../css/style.less">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="icon" href="../images/LOGO.ico"/>
@@ -22,6 +22,7 @@
         <carousel interval="myInterval">
             <slide ng-repeat="slide in slides" active="slide.active">
                 <a href="{{slide.link}}"><img ng-src="{{slide.image}}" style="margin:auto;"> </a>
+
                 <div class="carousel-caption"></div>
             </slide>
         </carousel>
@@ -57,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div ng-include src="'contact-form.html'" class="row contact" ></div>
+    <div ng-include src="'contact-form.html'" class="row contact"></div>
 
     <div class="row logos">
         <div class="container">

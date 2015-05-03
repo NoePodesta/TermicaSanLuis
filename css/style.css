@@ -585,6 +585,33 @@ nav ul, nav ol, nav li {
     text-decoration: underline;
 }
 
+video{
+    width: auto;
+    max-width: 95%;
+    position: absolute;
+    top: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.simulador button{
+    position: absolute;
+    top: 180px;
+    border: none;
+    background-color: #01573E;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 15px;
+    margin: 10px 10px 10px 20px;
+}
+
+.simulador p{
+    position: absolute;
+    top: 110px;
+    margin-left: 10px;
+}
+
 
 
 
