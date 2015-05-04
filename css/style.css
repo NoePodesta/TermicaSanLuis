@@ -37,14 +37,35 @@ ul, li{
     /*width: 100%;*/
 /*}*/
 
-#our-company .container li:before, #quality-policy .container li:before{
+#quality-policy .container li:before{
     content: url('../images/BULLETS-06-small.png');
     vertical-align: text-top;
     padding-right: 5px;
 }
 
-#quality-policy .container li, #our-company .container li{
+#our-company .container li:before{
+    content: '✔';
+    margin-left: -1em;
+    margin-right: 5px;
+    color: #e6e533;
+}
+
+#our-company img{
+    max-width: 100%;
+}
+
+#our-company .container li {
     list-style: none;
+    text-indent: -3px;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#quality-policy .container li{
+    list-style: none;
+    margin-left: 40px;
+    text-indent: -26px;
 }
 
 #map_of_BA, #map_of_SM, #map_fa_SL{
@@ -223,24 +244,6 @@ h1.green-label{
     margin: 10px 0;
 }
 
-.history{
-    background-color: #A0A0A0;
-    color: white;
-    text-align: justify;
-}
-
-
-.history h1{
-    color: #A0A0A0;
-    background-color: white;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: normal;
-    padding: 10px 0 10px 30px;
-    width: 20%;
-
-}
-
 #quality-policy img{
     width: 100%;
 }
@@ -252,37 +255,37 @@ h1.green-label{
     width: auto;
 }
 
-.mision{
-    background-color: white;
-    color: #01573E;
-    text-align: justify;
+#our-company h1{
+ text-transform: uppercase;
+ font-size: 20px;
 }
 
-.mision h1{
-    color: #ffffff;
-    background-color: #01573E;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: normal;
-    padding: 10px 0 10px 30px;
-    width: 20%;
-
+#our-company h1:before{
+    content: url('../images/BULLETS-06-small.png');
+    vertical-align: text-top;
+    padding-right: 5px;
+    margin-left: -4px;
 }
-.values{
-    background-color: #01573E;
+
+.history, .mision, .fabric{
     color: #A0A0A0;
     text-align: justify;
 }
 
+
+.history h1, .mision h1, .fabric h1{
+    color: #01573E;
+}
+
+.values{
+    background-color: #e8e8e6;
+    color: #A0A0A0;
+    text-align: justify;
+    padding: 10px 0px;
+}
+
 .values h1{
     color: #01573E;
-    background-color: #A0A0A0;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: normal;
-    padding: 10px 0 10px 30px;
-    width: 20%;
-
 }
 
 .env-responsability, .quality-policy{
@@ -610,6 +613,16 @@ video{
     position: absolute;
     top: 110px;
     margin-left: 10px;
+}
+
+.fabric{
+    margin-top: 30px;
+}
+
+.fabric .plantas{
+    text-align: center;
+    margin: 10px 0;
+    color: #01573E;
 }
 
 
