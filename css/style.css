@@ -33,17 +33,14 @@ ul, li{
     padding: 0;
 }
 
+img{
+    max-width: 100%;
+}
 /*#quality-policy img.fabric, #our-company img.fabric, #env-responsability img.fabric{*/
     /*width: 100%;*/
 /*}*/
 
-#quality-policy .container li:before{
-    content: url('../images/BULLETS-06-small.png');
-    vertical-align: text-top;
-    padding-right: 5px;
-}
-
-#our-company .container li:before{
+#our-company .container li:before, #quality-policy .container li:before {
     content: '✔';
     margin-left: -1em;
     margin-right: 5px;
@@ -54,18 +51,12 @@ ul, li{
     max-width: 100%;
 }
 
-#our-company .container li {
+#our-company .container li, #quality-policy .container li {
     list-style: none;
     text-indent: -3px;
     margin-left: 40px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-#quality-policy .container li{
-    list-style: none;
-    margin-left: 40px;
-    text-indent: -26px;
 }
 
 #map_of_BA, #map_of_SM, #map_fa_SL{
@@ -244,10 +235,6 @@ h1.green-label{
     margin: 10px 0;
 }
 
-#quality-policy img{
-    width: 100%;
-}
-
 .quality-policy .fa{
     padding-right: 10px;
 }
@@ -255,25 +242,26 @@ h1.green-label{
     width: auto;
 }
 
-#our-company h1{
+#our-company h1,  .quality-policy h1, .env-responsability h1{
  text-transform: uppercase;
  font-size: 20px;
+  text-align: left;
 }
 
-#our-company h1:before{
+#our-company h1:before, .quality-policy h1:before,  #env-responsability h1:before{
     content: url('../images/BULLETS-06-small.png');
     vertical-align: text-top;
     padding-right: 5px;
     margin-left: -4px;
 }
 
-.history, .mision, .fabric{
+.history, .mision, .fabric, .quality-policy, .env-responsability{
     color: #A0A0A0;
     text-align: justify;
 }
 
 
-.history h1, .mision h1, .fabric h1{
+.history h1, .mision h1, .fabric h1, .quality-policy h1, .env-responsability h1{
     color: #01573E;
 }
 
@@ -281,17 +269,11 @@ h1.green-label{
     background-color: #e8e8e6;
     color: #A0A0A0;
     text-align: justify;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .values h1{
     color: #01573E;
-}
-
-.env-responsability, .quality-policy{
-    color: #01573E;
-    background-color: white;
-    margin-bottom: 10px;
 }
 
 .submenu ul{
@@ -615,7 +597,15 @@ video{
     margin-left: 10px;
 }
 
-.fabric{
+.env-responsability .image{
+    margin: 30px 0;
+}
+
+.image{
+    max-width: 100%;
+}
+
+.fabric, .env-responsability{
     margin-top: 30px;
 }
 
