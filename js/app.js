@@ -1,40 +1,114 @@
 /**
  * Created by NoePodesta on 8/26/14.
  */
-angular.module('store', ['ui.bootstrap'])
+angular.module('termica', ['ui.bootstrap'])
 
-    .controller('StoreController', ['$scope', function (scope) {
-        scope.slides = slides;
+    .controller('homeController', ['$scope', function (scope) {
+        scope.slides =
+            [
+            {
+                image: '../images/index/Banner/BENEF-DE-AISLAR1.jpg',
+                text: 'imagen de ...',
+                link: 'beneficios-de-aislar.html'
+            },
+            {
+                image: '../images/index/Banner/FOTO-FABRICA1.jpg',
+                text: 'imagen de ...'
+            },
+            {
+                image: '../images/index/Banner/FOTO-FABRICA2.jpg',
+                text: 'imagen de ...'
+            },
+            {
+                image: '../images/index/Banner/FOTO-FABRICA3.jpg',
+                text: 'imagen de ...'
+            },
+            {
+                image: '../images/index/Banner/FOTO-FABRICA4.jpg',
+                text: 'imagen de ...'
+            },
+            {
+                image: '../images/index/Banner/FOTO-FABRICA5.jpg',
+                text: 'imagen de ...'
+            },
+            {
+                image: '../images/index/Banner/FOTO-FABRICA6.jpg',
+                text: 'imagen de ...'
+            },
+            {
+                image: '../images/index/Banner/FOTO-FABRICA7.jpg',
+                text: 'imagen de ...'
+            },
+            {
+                image: '../images/index/Banner/NEWS.jpg',
+                text: 'imagen de ...',
+                link: 'noticias.html'
+            }
+        ];
+
         scope.myInterval = 2500;
-//        initialize();
 
-        function initialize() {
+
+
+
+    }])
+
+    .controller('contactController', function () {
+
+        loadMap();
+
+        function loadMap (){
+
+
             var elementMapSL = document.getElementById('map_fa_SL');
             var mapSLOptions = {
-                center: new google.maps.LatLng(44.5403, -78.5463),
-                zoom: 8,
+                center: new google.maps.LatLng(-33.31427, -66.372290),
+                zoom: 15,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             var mapSL = new google.maps.Map(elementMapSL, mapSLOptions);
 
+            var markerSL = new google.maps.Marker({
+                map: mapSL,
+                position: new google.maps.LatLng(-33.31427, -66.372290)
+            });
+
+            google.maps.event.trigger(mapSL, 'resize');
+
             var elementMapSM = document.getElementById('map_of_SM');
             var mapSMOptions = {
-                center: new google.maps.LatLng(44.5403, -78.5463),
-                zoom: 8,
+                center: new google.maps.LatLng(-34.520138, -58.718769),
+                zoom: 15,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             var mapSM = new google.maps.Map(elementMapSM, mapSMOptions);
 
+            var markerSM = new google.maps.Marker({
+                map: mapSM,
+                position: new google.maps.LatLng(-34.520138, -58.718769)
+            });
+
+            google.maps.event.trigger(mapSM, 'resize');
+
             var elementMapBA = document.getElementById('map_of_BA');
             var mapBAOptions = {
-                center: new google.maps.LatLng(44.5403, -78.5463),
-                zoom: 8,
+                center: new google.maps.LatLng(-34.578340, -58.457937),
+                zoom: 15,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
             var mapBA = new google.maps.Map(elementMapBA, mapBAOptions);
+
+            var markerBA = new google.maps.Marker({
+                map: mapBA,
+                position: new google.maps.LatLng(-34.578340, -58.457937)
+            });
+
+            google.maps.event.trigger(mapBA, 'resize');
+
         }
-    }])
+    })
+
     .controller('Product', ['$scope', function (scope) {
         scope.status = {
             isFirstOpen: true,
@@ -42,6 +116,7 @@ angular.module('store', ['ui.bootstrap'])
         };
 
     }])
+
     .directive('anchorScroll', function () {
 
         return {
@@ -143,45 +218,7 @@ angular.module('store', ['ui.bootstrap'])
         }
     });
 
-var slides = [
-    {
-        image: '../images/index/Banner/BENEF-DE-AISLAR1.jpg',
-        text: 'imagen de ...',
-        link: 'beneficios-de-aislar.html'
-    },
-    {
-        image: '../images/index/Banner/FOTO-FABRICA1.jpg',
-        text: 'imagen de ...'
-    },
-    {
-        image: '../images/index/Banner/FOTO-FABRICA2.jpg',
-        text: 'imagen de ...'
-    },
-    {
-        image: '../images/index/Banner/FOTO-FABRICA3.jpg',
-        text: 'imagen de ...'
-    },
-    {
-        image: '../images/index/Banner/FOTO-FABRICA4.jpg',
-        text: 'imagen de ...'
-    },
-    {
-        image: '../images/index/Banner/FOTO-FABRICA5.jpg',
-        text: 'imagen de ...'
-    },
-    {
-        image: '../images/index/Banner/FOTO-FABRICA6.jpg',
-        text: 'imagen de ...'
-    },
-    {
-        image: '../images/index/Banner/FOTO-FABRICA7.jpg',
-        text: 'imagen de ...'
-    },
-    {
-        image: '../images/index/Banner/NEWS.jpg',
-        text: 'imagen de ...',
-        link: 'noticias.html'
-    }
-];
+
+
 
 

@@ -26,7 +26,7 @@ scotchApp.config(function($routeProvider) {
 
         // route for the contact page
         .when('/contact', {
-            templateUrl : 'pages/contact.html',
+            templateUrl : 'pages/contacto.html',
             controller  : 'contactController'
         });
 });

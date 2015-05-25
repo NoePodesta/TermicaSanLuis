@@ -60,8 +60,8 @@ img{
 }
 
 #map_of_BA, #map_of_SM, #map_fa_SL{
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 250px;
 }
 
 .sub-navbar{
@@ -290,6 +290,14 @@ h1.green-label{
     padding: 10px 20px;
     letter-spacing: 1px;
     font-weight: bold;
+}
+
+.submenu li:hover{
+    background-color: #01573E;
+}
+
+.submenu li:hover a{
+    color: white;
 }
 
 .submenu li a{
@@ -562,7 +570,7 @@ nav ul, nav ol, nav li {
 }
 
 
-#lanaMineralId .product-inner, #benefcios .product-inner{
+#benefcios .product-inner{
     margin-left: 0;
 }
 
@@ -613,6 +621,16 @@ video{
     text-align: center;
     margin: 10px 0;
     color: #01573E;
+}
+
+figcaption{
+    font-size: 10px;
+    text-align: center;
+}
+
+figure{
+    display: inline-block;
+    margin: 5px 10px 30px 10px;
 }
 
 
