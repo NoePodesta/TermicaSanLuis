@@ -16,11 +16,11 @@ angular.module('termica', ['ui.bootstrap'])
                 text: 'imagen de ...'
             },
             {
-                image: '../images/index/Banner/FOTO-FABRICA2.jpg',
+                image: '../images/index/Banner/Paneles-en-playa.jpg',
                 text: 'imagen de ...'
             },
             {
-                image: '../images/index/Banner/FOTO-FABRICA3.jpg',
+                image: '../images/index/Banner/stock-san-luis.jpg',
                 text: 'imagen de ...'
             },
             {
