@@ -7,40 +7,40 @@ angular.module('termica', ['ui.bootstrap'])
         scope.slides =
             [
             {
-                image: '../images/index/Banner/BENEF-DE-AISLAR1.jpg',
+                image: 'images/index/Banner/BENEF-DE-AISLAR1.jpg',
                 text: 'imagen de ...',
                 link: 'beneficios-de-aislar.html'
             },
             {
-                image: '../images/index/Banner/FOTO-FABRICA1.jpg',
+                image: 'images/index/Banner/FOTO-FABRICA1.jpg',
                 text: 'imagen de ...'
             },
             {
-                image: '../images/index/Banner/Paneles-en-playa.jpg',
+                image: 'images/index/Banner/Paneles-en-playa.jpg',
                 text: 'imagen de ...'
             },
             {
-                image: '../images/index/Banner/stock-san-luis.jpg',
+                image: 'images/index/Banner/stock-san-luis.jpg',
                 text: 'imagen de ...'
             },
             {
-                image: '../images/index/Banner/FOTO-FABRICA4.jpg',
+                image: 'images/index/Banner/FOTO-FABRICA4.jpg',
                 text: 'imagen de ...'
             },
             {
-                image: '../images/index/Banner/FOTO-FABRICA5.jpg',
+                image: 'images/index/Banner/FOTO-FABRICA5.jpg',
                 text: 'imagen de ...'
             },
             {
-                image: '../images/index/Banner/FOTO-FABRICA6.jpg',
+                image: 'images/index/Banner/FOTO-FABRICA6.jpg',
                 text: 'imagen de ...'
             },
             {
-                image: '../images/index/Banner/FOTO-FABRICA7.jpg',
+                image: 'images/index/Banner/FOTO-FABRICA7.jpg',
                 text: 'imagen de ...'
             },
             {
-                image: '../images/index/Banner/NEWS.jpg',
+                image: 'images/index/Banner/NEWS.jpg',
                 text: 'imagen de ...',
                 link: 'noticias.html'
             }
