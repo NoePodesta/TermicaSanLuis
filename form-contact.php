@@ -72,8 +72,7 @@ if(isset($_POST['email'])) {
 
 
 
-    Thank you for contacting us. We will be in touch with you very soon.
-
+    Gracias por contactarnos, te responderemos a la brevedad.
 
 
 <?php
