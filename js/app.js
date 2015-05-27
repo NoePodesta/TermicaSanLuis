@@ -32,7 +32,7 @@ angular.module('termica', ['ui.bootstrap'])
                 text: 'imagen de ...'
             },
             {
-                image: 'images/index/Banner/FOTO-FABRICA6.jpg',
+                image: 'images/index/Banner/Paneles-autoportantes.jpg',
                 text: 'imagen de ...'
             },
             {
