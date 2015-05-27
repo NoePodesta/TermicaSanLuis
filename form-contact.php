@@ -7,33 +7,10 @@ if(isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
 
     if($_POST['subject'] == "paneles"){
-        $email_to = "podesta.noe@gmail.com";
+        $email_to = "tecnica@termicasanluis.com.ar";
     }else{
-        $email_to = "jacobipedro@gmail.com";
+        $email_to = "lana@termicasanluis.com.ar";
     }
-
-
-
-    function died($error) {
-
-        // your error code can go here
-
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-
-        echo "These errors appear below.<br /><br />";
-
-        echo $error."<br /><br />";
-
-        echo "Please go back and fix these errors.<br /><br />";
-
-        die();
-
-    }
-
-
-
-
-
 
 
     $subject = $_POST['subject']; // required
@@ -67,7 +44,7 @@ if(isset($_POST['email'])) {
 
     $email_message .= "Empresa: ".clean_string($company)."\n";
 
-    $email_message .= "Email: ".clean_string($email)."\n";
+    $email_message .= "Email: ".clean_string($email_from)."\n";
 
     $email_message .= "Teléfono: ".clean_string($telephone)."\n";
 
@@ -88,16 +65,6 @@ if(isset($_POST['email'])) {
     @mail($email_to, $subject, $email_message, $headers);
 
     ?>
-
-
-
-    <!-- include your own success html here -->
-
-
-
-    Thank you for contacting us. We will be in touch with you very soon.
-
-
 
 <?php
 
