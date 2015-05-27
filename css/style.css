@@ -349,6 +349,9 @@ h1.green-label{
 
 .icon-products{
     margin-bottom: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: auto;
 }
 
 

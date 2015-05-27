@@ -32,23 +32,6 @@ if(isset($_POST['email'])) {
 
 
 
-    // validation expected data exists
-
-    if(!isset($_POST['name']) ||
-
-        !isset($_POST['subject']) ||
-
-        !isset($_POST['company']) ||
-
-        !isset($_POST['email']) ||
-
-        !isset($_POST['telephone']) ||
-
-        !isset($_POST['message'])) {
-
-        died('We are sorry, but there appears to be a problem with the form you submitted.');
-
-    }
 
 
 
@@ -57,7 +40,7 @@ if(isset($_POST['email'])) {
 
     $name = $_POST['name']; // required
 
-    $email = $_POST['email']; // required
+    $email_from = $_POST['email']; // required
 
     $telephone = $_POST['telephone'];  //required
 
@@ -67,37 +50,6 @@ if(isset($_POST['email'])) {
 
 
 
-    $error_message = "";
-
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-
-    if(!preg_match($email_exp,$email_from)) {
-
-        $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-
-    }
-
-    $string_exp = "/^[A-Za-z .'-]+$/";
-
-    if(!preg_match($string_exp,$name)) {
-
-        $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-
-    }
-
-    if(strlen($message) < 2) {
-
-        $error_message .= 'The Comments you entered do not appear to be valid.<br />';
-
-    }
-
-    if(strlen($error_message) > 0) {
-
-        died($error_message);
-
-    }
-
-    $email_message = "Form details below.\n\n";
 
 
 
@@ -133,7 +85,7 @@ if(isset($_POST['email'])) {
 
         'X-Mailer: PHP/' . phpversion();
 
-    @mail($email_to, $email_subject, $email_message, $headers);
+    @mail($email_to, $subject, $email_message, $headers);
 
     ?>
 
